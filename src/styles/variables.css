@@ -1,0 +1,13 @@
+:root {
+    /* Social Media Colors */
+    --instagram-color: #E1306C;
+    --snapchat-color: #FFFC00;
+    --email-color: #EA4335;
+    --whatsapp-color: #25D366;
+
+    /* Theme Colors */
+    --bg-gradient-start: #1a1a1a;
+    --bg-gradient-end: #2d2d2d;
+    --text-color: #ffffff;
+    --container-bg: rgba(255, 255, 255, 0.1);
+}

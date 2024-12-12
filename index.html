@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --instagram-color: #E1306C;
+            --snapchat-color: #FFFC00;
+            --email-color: #EA4335;
+            --whatsapp-color: #25D366;
+            --bg-gradient-start: #1a1a1a;
+            --bg-gradient-end: #2d2d2d;
+            --text-color: #ffffff;
+            --container-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-section {
+            width: 100%;
+            max-width: 1000px;
+            padding: 1rem;
+        }
+
+        .container {
+            background: var(--container-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            color: var(--text-color);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--instagram-color), var(--whatsapp-color));
+            border-radius: 2px;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 15px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            background: var(--container-bg);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .social-link i {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .social-link span {
+            font-size: 1rem;
+            font-weight: 500;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .instagram {
+            border-left: 4px solid var(--instagram-color);
+        }
+        .instagram i {
+            color: var(--instagram-color);
+        }
+        .instagram:hover {
+            background: var(--instagram-color);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+        }
+        .instagram:hover i {
+            color: white;
+        }
+
+        .snapchat {
+            border-left: 4px solid var(--snapchat-color);
+        }
+        .snapchat i {
+            color: var(--snapchat-color);
+        }
+        .snapchat:hover {
+            background: #000;
+            color: var(--snapchat-color);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 252, 0, 0.3);
+        }
+
+        .email {
+            border-left: 4px solid var(--email-color);
+        }
+        .email i {
+            color: var(--email-color);
+        }
+        .email:hover {
+            background: var(--email-color);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+        }
+        .email:hover i {
+            color: white;
+        }
+
+        .whatsapp {
+            border-left: 4px solid var(--whatsapp-color);
+        }
+        .whatsapp i {
+            color: var(--whatsapp-color);
+        }
+        .whatsapp:hover {
+            background: var(--whatsapp-color);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        .whatsapp:hover i {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .title {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+            }
+
+            .social-links {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .social-link {
+                padding: 0.75rem;
+            }
+
+            .social-link i {
+                font-size: 1.25rem;
+                margin-right: 0.5rem;
+            }
+
+            .social-link span {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="title">CONTACTEZ-NOUS SUR</h2>
+            <div class="social-links">
+                <a href="https://instagram.com/Hb.store92" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Hb.store92</span>
+                </a>
+                <a href="https://snapchat.com/Hanes92" class="social-link snapchat">
+                    <i class="fab fa-snapchat"></i>
+                    <span>Hanes92</span>
+                </a>
+                <a href="mailto:Hb92.contact@gmail.com" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Hb92.contact@gmail.com</span>
+                </a>
+                <a href="https://wa.me/33751059933" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+33 7 51 05 99 33</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import './variables.css';
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    background: var(--container-bg);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.social-link span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Social Media Specific Styles */
+.instagram {
+    border-left: 4px solid var(--instagram-color);
+}
+.instagram i {
+    color: var(--instagram-color);
+}
+.instagram:hover {
+    background: var(--instagram-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+}
+.instagram:hover i {
+    color: white;
+}
+
+.snapchat {
+    border-left: 4px solid var(--snapchat-color);
+}
+.snapchat i {
+    color: var(--snapchat-color);
+}
+.snapchat:hover {
+    background: #000;
+    color: var(--snapchat-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 252, 0, 0.3);
+}
+
+.email {
+    border-left: 4px solid var(--email-color);
+}
+.email i {
+    color: var(--email-color);
+}
+.email:hover {
+    background: var(--email-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+}
+.email:hover i {
+    color: white;
+}
+
+.whatsapp {
+    border-left: 4px solid var(--whatsapp-color);
+}
+.whatsapp i {
+    color: var(--whatsapp-color);
+}
+.whatsapp:hover {
+    background: var(--whatsapp-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+.whatsapp:hover i {
+    color: white;
+}

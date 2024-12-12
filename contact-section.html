@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    .contact-container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-title {
+        color: #ffffff;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .contact-title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #E1306C, #25D366);
+        border-radius: 2px;
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .social-link i {
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .social-link span {
+        font-size: 1rem;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .instagram { border-left: 4px solid #E1306C; }
+    .instagram i { color: #E1306C; }
+    .instagram:hover {
+        background: #E1306C;
+        color: white;
+        transform: translateY(-5px);
+    }
+    .instagram:hover i { color: white; }
+
+    .snapchat { border-left: 4px solid #FFFC00; }
+    .snapchat i { color: #FFFC00; }
+    .snapchat:hover {
+        background: #000;
+        color: #FFFC00;
+        transform: translateY(-5px);
+    }
+
+    .email { border-left: 4px solid #EA4335; }
+    .email i { color: #EA4335; }
+    .email:hover {
+        background: #EA4335;
+        color: white;
+        transform: translateY(-5px);
+    }
+    .email:hover i { color: white; }
+
+    .whatsapp { border-left: 4px solid #25D366; }
+    .whatsapp i { color: #25D366; }
+    .whatsapp:hover {
+        background: #25D366;
+        color: white;
+        transform: translateY(-5px);
+    }
+    .whatsapp:hover i { color: white; }
+
+    @media (max-width: 768px) {
+        .contact-container {
+            padding: 1.5rem;
+        }
+
+        .contact-title {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .social-link {
+            padding: 0.75rem;
+        }
+
+        .social-link i {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-container {
+            padding: 1rem;
+        }
+
+        .contact-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<div class="contact-container">
+    <h2 class="contact-title">CONTACTEZ-NOUS SUR</h2>
+    <div class="social-links">
+        <a href="https://instagram.com/Hb.store92" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Hb.store92</span>
+        </a>
+        <a href="https://snapchat.com/Hanes92" class="social-link snapchat">
+            <i class="fab fa-snapchat"></i>
+            <span>Hanes92</span>
+        </a>
+        <a href="mailto:Hb92.contact@gmail.com" class="social-link email">
+            <i class="fas fa-envelope"></i>
+            <span>Hb92.contact@gmail.com</span>
+        </a>
+        <a href="https://wa.me/33751059933" class="social-link whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>+33 7 51 05 99 33</span>
+        </a>
+    </div>
+</div>
